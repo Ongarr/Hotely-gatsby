@@ -1,9 +1,9 @@
 html {
-  @apply text-base;
+    @apply text-base;
 }
 
 body {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 body,
@@ -11,7 +11,7 @@ button,
 input,
 select,
 textarea {
-  @apply text-base;
+    @apply text-base;
 }
 
 h1,
@@ -26,36 +26,36 @@ h6,
 .title-4,
 .title-5,
 .title-6 {
-  clear: both;
+    clear: both;
 }
 
 h1,
 .title-1 {
-  @apply text-h1;
+    @apply text-h1;
 }
 
 h2,
 .title-2 {
-  @apply text-h2;
+    @apply text-h2;
 }
 
 h3,
 .title-3,
 blockquote {
-  @apply text-h3;
+    @apply text-h3;
 }
 
 h4,
 .title-4 {
-  @apply text-h4;
+    @apply text-h4;
 }
 
 h5,
 .title-5 {
-  @apply text-h5;
+    @apply text-h5;
 }
 
 h6,
 .title-6 {
-  @apply text-h6;
+    @apply text-h6;
 }

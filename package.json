@@ -6,11 +6,13 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.23.1",
+    "gatsby-cli": "^2.12.87",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-advanced-sitemap": "^1.4.5",
     "gatsby-plugin-gdpr-cookies": "^1.0.3",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^4.1.6",
+    "gatsby-plugin-prettier-eslint": "^1.0.4",
     "gatsby-plugin-purgecss": "^4.0.0",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-root-import": "^2.0.5",
@@ -55,10 +57,15 @@
     "deploy": "netlify build && netlify deploy --prod",
     "deploy:prod": "netlify deploy --prod",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "prettier": "^1.15.3",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.5",
+    "prettier": "^1.19.1",
     "tailwindcss": "1.3.1"
   }
 }
