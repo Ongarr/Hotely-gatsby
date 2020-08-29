@@ -28,20 +28,20 @@ const Hero = () => {
   console.log(data);
 
   return (
-    <section className="hero relative min-h-screen overflow-hidden">
-      <div className="relative">
-        <Img
-          fluid={data.heroImage.childImageSharp.fluid}
-          alt="Hotely Hero Image"
-          className="hero-image z-0 min-h-full"
-          style={{
-            position: "absolute",
-            width: "100%",
-            overflow: "hidden",
-            transform: "translateY(-20px)",
-          }}
-        />
-      </div>
+    <section id="hero" className="relative overflow-hidden">
+      <Img
+        fluid={data.heroImage.childImageSharp.fluid}
+        imgStyle={{ objectFit: "fill" }}
+        alt="Hotely Hero Image"
+        className="hero-image z-0 absolute"
+        style={{
+          overflow: "hidden",
+          minHeight: "1130px",
+          position: "absolute",
+          width: "100%",
+        }}
+      />
+
       <Img
         fluid={data.heroLines.childImageSharp.fluid}
         alt="Funky lines in hero image"
@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="hero__quotes-icons small-heart">
             <img src="/img/icons/ICON LOVE 1.png" alt="small heart"></img>
           </div>
-          <div className="hero__quotes-icons medium-heart">
+          <div className="hero__quotes-icons medium-heart transform -translate-x-1/2">
             <img src="/img/icons/ICON LOVE 2.png" alt="medium heart"></img>
           </div>
           <div className="hero__quotes-icons quote-1">

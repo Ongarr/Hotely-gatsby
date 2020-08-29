@@ -1,37 +1,41 @@
-.hero-lines {
-  width: 1170px;
-  height: 953px;
-  max-width: 100%;
-  transform: translateX(-50%);
-}
+#hero {
+  min-height: 1132px;
 
-.search-form {
-  > div {
-    max-width: 487px;
-  }
-}
-
-.hero__quotes-icons {
-  .small-heart {
-    position: absolute;
-    top: 285px;
-    left: 620px;
+  .hero-lines {
+    width: 1170px;
+    height: 953px;
+    max-width: 100%;
+    transform: translateX(-50%);
   }
 
-  .medium-heart {
-    position: absolute;
-    top: 740px;
-    right: 0px;
+  .search-form {
+    > div {
+      max-width: 487px;
+    }
   }
 
-  .quote-1 {
-    top: 330px;
-    right: 23px;
-    position: absolute;
-  }
-  .quote-2 {
-    top: 641px;
-    right: 390px;
-    position: absolute;
+  .hero__quotes-icons {
+    .small-heart {
+      position: absolute;
+      top: 285px;
+      left: 620px;
+    }
+
+    .medium-heart {
+      position: absolute;
+      top: 740px;
+      right: 0px;
+    }
+
+    .quote-1 {
+      top: 330px;
+      right: 23px;
+      position: absolute;
+    }
+    .quote-2 {
+      top: 641px;
+      right: 390px;
+      position: absolute;
+    }
   }
 }

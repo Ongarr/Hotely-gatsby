@@ -19,6 +19,9 @@ module.exports = {
 
       black: "#000",
       white: "#fff",
+      softgreen: "#85C7D3",
+      grey: "#888888",
+      softergreen: "#F3F9FB",
 
       gray: {
         100: "#f7fafc",
@@ -181,6 +184,7 @@ module.exports = {
       default: "0.75rem",
       md: "1.25rem",
       lg: "0.5rem",
+      xl: "1.875rem",
       full: "9999px",
     },
     borderWidth: {
@@ -256,7 +260,7 @@ module.exports = {
       h6: "1.25rem",
       h5: "1.5rem",
       h4: "1.875rem",
-      h3: "2.25rem",
+      h3: "2rem",
       h2: "3rem",
       h1: "4rem",
     },

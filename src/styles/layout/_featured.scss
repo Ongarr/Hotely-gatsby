@@ -1,0 +1,13 @@
+#featured {
+  h2 {
+    font-size: 32px;
+    line-height: 60px;
+  }
+
+  .featured__wrapper::before {
+    content: "";
+    z-index: -1;
+    @apply bg-softergreen absolute left-0 right-0 w-full h-full transform translate-x-1/2;
+    overflow: hidden;
+  }
+}
