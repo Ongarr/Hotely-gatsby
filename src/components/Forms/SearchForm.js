@@ -2,7 +2,7 @@ import React from "react";
 
 function SearchForm() {
   return (
-    <form className="w-full search-form static">
+    <div className="w-full search-form static">
       <div className="w-full wrapper m-auto md:m-0">
         <form className="bg-white rounded-md p-10 mb-4">
           <div className="mb-4 relative">
@@ -26,16 +26,16 @@ function SearchForm() {
                   <path
                     d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"
                     stroke="#273029"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M12 13a3 3 0 100-6 3 3 0 000 6z"
                     stroke="#273029"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -86,9 +86,11 @@ function SearchForm() {
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-gray-700">
                 <svg
-                  classNameName="fill-current h-6 w-6"
+                  className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
+                  width="24"
+                  height="24"
                 >
                   <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                 </svg>
@@ -98,7 +100,7 @@ function SearchForm() {
           <div className="md:flex md:items-center mb-6 mt-6">
             <label className="flex text-black">
               <input
-                className="pay-checkin__checkbox relative mr-2 appearance-none w-6 h-6 bg-softgreen"
+                className="pay-checkin__checkbox relative mr-2 appearance-none w-6 h-6 bg-softgreen checked:bg-white"
                 type="checkbox"
               ></input>
               <span className="text">Pay when checking in?</span>
@@ -114,7 +116,7 @@ function SearchForm() {
           </div>
         </form>
       </div>
-    </form>
+    </div>
   );
 }
 

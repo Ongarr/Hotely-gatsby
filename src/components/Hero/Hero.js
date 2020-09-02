@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 const Hero = () => {
-  const data = useStaticQuery(graphql`
+  let data = useStaticQuery(graphql`
     fragment fluidImage on File {
       childImageSharp {
         fluid(maxWidth: 1920) {
@@ -25,18 +25,15 @@ const Hero = () => {
     }
   `);
 
-  console.log(data);
-
   return (
     <section id="hero" className="relative overflow-hidden">
       <Img
         fluid={data.heroImage.childImageSharp.fluid}
-        imgStyle={{ objectFit: "fill" }}
+        imgStyle={{ objectFit: "cover" }}
         alt="Hotely Hero Image"
-        className="hero-image z-0 absolute"
+        className="hero-image z-0 absolute min-h-full"
         style={{
           overflow: "hidden",
-          minHeight: "1130px",
           position: "absolute",
           width: "100%",
         }}
@@ -51,7 +48,7 @@ const Hero = () => {
           height: "953px",
         }}
       />
-      <div class="container flex flex-wrap relative">
+      <div className="container flex flex-wrap relative">
         <div className="w-full md:w-1/2 mt-64 mb-64  z-10">
           <SearchForm />
         </div>

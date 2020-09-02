@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import Layout from "@/components/Layout";
 import Hero from "../components/Hero/Hero";
 import Featured from "../components/Featured/Featured";
+import About from "../components/About/About";
+import Recommendation from "../components/Recommendation/Recommendation";
 
 class HomePage extends React.Component {
   render() {
@@ -13,6 +15,8 @@ class HomePage extends React.Component {
       <Layout>
         <Hero />
         <Featured />
+        <About />
+        <Recommendation />
       </Layout>
     );
   }
