@@ -62,7 +62,7 @@ const Recommendation = () => {
         />
       </div>
       <div className="container flex flex-wrap">
-        <div className="md:w-1/2 w-full transform translate-y-20">
+        <div className="md:w-1/2 w-full transform translate-y-1/2">
           <img
             src="/img/graphics/DECORATION-BIG.png"
             alt="fancy dots"

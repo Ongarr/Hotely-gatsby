@@ -242,7 +242,14 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Ubuntu"],
-      serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+      serif: [
+        "Ubuntu",
+        "Georgia",
+        "Cambria",
+        '"Times New Roman"',
+        "Times",
+        "serif",
+      ],
       mono: [
         "Menlo",
         "Monaco",

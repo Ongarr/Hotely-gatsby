@@ -6,6 +6,7 @@ import Hero from "../components/Hero/Hero";
 import Featured from "../components/Featured/Featured";
 import About from "../components/About/About";
 import Recommendation from "../components/Recommendation/Recommendation";
+import FindHotel from "../components/FindHotel/FindHotel";
 
 class HomePage extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class HomePage extends React.Component {
         <Featured />
         <About />
         <Recommendation />
+        <FindHotel />
       </Layout>
     );
   }
