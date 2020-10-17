@@ -7,6 +7,7 @@ import Featured from "../components/Featured/Featured";
 import About from "../components/About/About";
 import Recommendation from "../components/Recommendation/Recommendation";
 import FindHotel from "../components/FindHotel/FindHotel";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 class HomePage extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class HomePage extends React.Component {
         <About />
         <Recommendation />
         <FindHotel />
+        <Testimonials />
       </Layout>
     );
   }

@@ -22,6 +22,7 @@ module.exports = {
       softgreen: "#85C7D3",
       grey: "#888888",
       softergreen: "#F3F9FB",
+      opacitygreen: "#9dd2dc",
 
       gray: {
         100: "#f7fafc",

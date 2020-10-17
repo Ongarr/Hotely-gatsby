@@ -1,0 +1,23 @@
+#testimonials .img-slider .swiper-slide {
+  height: 470px;
+}
+
+#testimonials .vertical-slider {
+  max-height: 470px;
+}
+
+#testimonials .vertical-slider::after {
+  background: rgb(133, 199, 211);
+  background: linear-gradient(
+    0deg,
+    rgba(133, 199, 211, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
