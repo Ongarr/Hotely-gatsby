@@ -84,13 +84,13 @@ module.exports = {
         name: "uploads",
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/content`,
-        name: "pages",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: `${__dirname}/content`,
+    //     name: "pages",
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-sass`,
