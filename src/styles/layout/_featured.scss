@@ -5,9 +5,23 @@
   }
 
   .featured__wrapper::before {
-    content: "";
-    z-index: -1;
-    @apply bg-softergreen absolute left-0 right-0 w-full h-full transform translate-x-1/2;
-    overflow: hidden;
+    display: none;
+  }
+
+  .featured__wrapper {
+    flex-direction: column;
+  }
+
+  @media (min-width: 980px) {
+    .featured__wrapper {
+      flex-direction: row;
+    }
+
+    .featured__wrapper::before {
+      content: "";
+      z-index: -1;
+      @apply bg-softergreen absolute left-0 right-0 w-full h-full transform translate-x-1/2;
+      overflow: hidden;
+    }
   }
 }

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 const About = () => {
-  let data = useStaticQuery(graphql`
+  let aboutImages = useStaticQuery(graphql`
     query {
       aboutImage: file(relativePath: { eq: "about1.jpg" }) {
         childImageSharp {
@@ -22,8 +22,6 @@ const About = () => {
     }
   `);
 
-  console.log(data);
-
   return (
     <section
       id="about"
@@ -41,7 +39,7 @@ const About = () => {
           className="decoration-2 z-10 absolute bottom-0 right-0"
         ></img>
         <Img
-          fluid={data.aboutImage.childImageSharp.fluid}
+          fluid={aboutImages.aboutImage.childImageSharp.fluid}
           alt="About us graphic"
           imgStyle={{ objectFit: "fill" }}
           style={{
@@ -49,7 +47,7 @@ const About = () => {
           }}
         />
         <Img
-          fluid={data.aboutImage2.childImageSharp.fluid}
+          fluid={aboutImages.aboutImage2.childImageSharp.fluid}
           alt="About us secound graphic"
           imgStyle={{ objectFit: "fill" }}
           style={{
@@ -62,7 +60,7 @@ const About = () => {
           }}
         />
       </div>
-      <div className=" pl-24 py-10">
+      <div className="lg:pl-24 py-10">
         <div className="font-bold text-h3 mb-8">About Hotely</div>
         <div className="text-grey tracking-wider leading-8">
           Semper sed neque quis tortor. Diam augue et lectus eget amet. Urna,
@@ -70,7 +68,7 @@ const About = () => {
           porttitor. Augue consequat, eu dictum felis. Ipsum gravida fermentum
           vel lectus cursus. Purus arcu, fermentum in
         </div>
-        <div className="stats flex my-10">
+        <div className="stats flex flex-wrap my-10">
           <div className="mr-8">
             <span className="mr-2 text-h5 font-bold text-softgreen">1.2k</span>
             Hotel

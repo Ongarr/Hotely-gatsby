@@ -31,7 +31,7 @@ const Hero = () => {
         fluid={data.heroImage.childImageSharp.fluid}
         imgStyle={{ objectFit: "cover" }}
         alt="Hotely Hero Image"
-        className="hero-image z-0 absolute min-h-full"
+        className="hero-image z-0 absolute md:min-h-full"
         style={{
           overflow: "hidden",
           position: "absolute",
@@ -49,7 +49,7 @@ const Hero = () => {
         }}
       />
       <div className="container flex flex-wrap relative">
-        <div className="w-full md:w-1/2 mt-64 mb-64  z-10">
+        <div className="w-full md:w-1/2 mt-64 md:my-64 z-10">
           <SearchForm />
         </div>
         <div className="relative w-full md:w-1/2 h-full"></div>

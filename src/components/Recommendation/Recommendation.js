@@ -20,7 +20,7 @@ const Recommendation = () => {
       className="bg-softergreen mt-24 relative pt-32"
     >
       <div className="container flex flex-wrap">
-        <div className="w-full sm:w-1/2 md:w-1/3 mr-8">
+        <div className="w-full sm:w-1/2 md:w-1/3 mr-8 mb-8">
           <div className="font-bold text-h3 mb-2">Sanghai Hotel</div>
           <div className="text-softgreen text-sm mb-8">Sanghai, China</div>
           <div className="text-grey tracking-wider leading-8">
@@ -29,7 +29,7 @@ const Recommendation = () => {
             tincidunt
           </div>
           <div className="flex flex-wrap mt-10">
-            <div className="w-1/2 flex justify-start items-center">
+            <div className="md:w-1/2 flex justify-start items-center">
               <button
                 className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-4 px-10 rounded focus:outline-none focus:shadow-outline"
                 type="button"
@@ -37,7 +37,7 @@ const Recommendation = () => {
                 Book Now
               </button>
             </div>
-            <div className="w-1/2 flex justify-start items-center">
+            <div className="md:w-1/2 flex justify-start items-center pl-8 md:pl-0">
               <div>
                 <span className="font-bold text-h5">$40</span>
                 <span className="text-sm items-bottom">/Night</span>

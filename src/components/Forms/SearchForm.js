@@ -4,7 +4,7 @@ function SearchForm() {
   return (
     <div className="w-full search-form static">
       <div className="w-full wrapper m-auto md:m-0">
-        <form className="bg-white rounded-md p-10 mb-4">
+        <form className="bg-softgreen md:bg-white rounded-md p-10 mb-4">
           <div className="mb-4 relative">
             <label className="block text-black font-bold mb-2" htmlFor="place">
               Where you go?

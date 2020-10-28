@@ -87,6 +87,7 @@ const Testimonials = () => {
               <div className="mt-8 text-h5 text-white font-bold">
                 Micheal Peck
               </div>
+              <div className="text-gray-200">Singapore</div>
             </SwiperSlide>
             <SwiperSlide effect="fade">
               <div className="bg-opacitygreen text-white p-8 min-h-full">
@@ -98,6 +99,7 @@ const Testimonials = () => {
               <div className="mt-8 text-h5 text-white font-bold">
                 Robert Rene
               </div>
+              <div className="text-gray-200">Singapore</div>
             </SwiperSlide>
             <div class="nav-wrapper flex justify-end mt-12">
               <div className="swiper-button-prev bg-opacitygreen w-auto rounded-full p-3 mr-2">
